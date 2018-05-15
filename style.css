@@ -1,0 +1,157 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+
+/* THIS LINE LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  /* Sets default font-size to 16px, ensuring 1em = 16px; */
+  font: helvetica;
+  font-size: 16px;
+  /* background-color: #D3D3D3; */
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.hero-image {
+  /* The image used */
+  background-image: url('https://i.imgur.com/eC8HYh4.gif');
+  display: block;
+  /* Set a specific height */
+  height: 50%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: 5px 5px 5px #888888;
+  margin-bottom: 40px;
+}
+
+/* Place text in the middle of the image */
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+#headline {
+  font-size: 50px;
+  color: #ffff66;
+}
+
+#subhead {
+  align-items: left;
+  font-size: 20px;
+  padding-top: 5px;
+  letter-spacing: .5px;
+  line-height: 25px;
+}
+
+#byline {}
+
+h1 {
+  text-align: center;
+  font-weight: 8800;
+  font-size: 40px;
+}
+
+/* Start your base/mobile styles here */
+
+html, header, body, p {
+  /* Sets default font-size to 16px, ensuring 1em = 16px; */
+  font-size: 16px;
+  align-items: center;
+  text-align: left;
+}
+
+/* Style the navbar */
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+  padding-left: 40px;
+}
+
+/* Navbar links */
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+  padding-top: 60px;
+}
+
+/* Page content */
+
+.content {
+  padding: 16px;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+.sticky+.content {
+  padding-top: 60px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+figcaption {
+  font-size: 12px;
+}
+
+.container {
+  max-width: 980px;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+/* Tablet/Desktop overrides */
+
+@media(min-width: 681px) {
+  /* Any adjustments for tablets and larger go here. Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+}
+
+@media(min-width: 729px) {
+  /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+}
+
+}
