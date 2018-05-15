@@ -12,7 +12,12 @@ $(document).ready(function () {
 });
 
 function scrollToElement(ele) {
+	var top = ele.offset().top;
+
+	console.log("Updated");
+	console.log(top);
+
 	$("html, body").animate({
-		scrollTop: ele.offset().top
+		scrollTop: (top - 50)
 	});
 }
