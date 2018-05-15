@@ -123,6 +123,12 @@ html, header, body, p {
   padding: 16px;
 }
 
+.int {
+  width: 100%;
+  min-height: 500px;
+  border: 0;
+}
+
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 
 .sticky+.content {
