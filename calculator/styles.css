@@ -45,6 +45,10 @@ You will find this is far easier than the opposite task of using CSS to cram you
   background-color: #f1e8d9;
 }
 
+.question span {
+  font-size: 25px;
+}
+
 .button {
   margin: 20px 0px 0px 0px;
 }
