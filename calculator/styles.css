@@ -144,6 +144,7 @@ blockquote footer cite {
 html, body {
   /* Sets default font-size to 16px, ensuring 1em = 16px; */
   font-size: 16px;
+  font-family: helvetica;
 }
 
 .question {

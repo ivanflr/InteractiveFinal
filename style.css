@@ -49,12 +49,15 @@ html, body {
 }
 
 #headline {
-  font-size: 40px;
-  color: #ffff66;
+  font-family: helvetica;
+  font-size: 55px;
+  color: white;
   align-items: left;
+  text-shadow: 3px 3px #808080;
 }
 
 #subhead {
+  font-family: helvetica;
   align-items: left;
   font-size: 20px;
   letter-spacing: .7px;
@@ -62,14 +65,17 @@ html, body {
 }
 
 #byline {
+  font-family: helvetica;
   font-size: .5em;
 }
 
 h1 {
+  font-family: helvetica;
   text-align: center;
 }
 
 h2 {
+  font-family: helvetica;
   padding-left: 2%;
 }
 
@@ -77,6 +83,7 @@ h2 {
 
 html, header, body, p {
   /* Sets default font-size to 16px, ensuring 1em = 16px; */
+  font-family: helvetica;
   font-size: 16px;
   align-items: center;
   text-align: left;
