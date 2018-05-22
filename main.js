@@ -18,6 +18,6 @@ function scrollToElement(ele) {
 	console.log(top);
 
 	$("html, body").animate({
-		scrollTop: (top - 50)
+		scrollTop: (top - 100)
 	});
 }

@@ -180,9 +180,68 @@ figcaption {
 
 @media(min-width: 729px) {
   /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
-  img {
+  #headline {
+    font-family: helvetica;
+    font-size: 100px;
+    color: white;
+    align-items: left;
+    text-shadow: 3px 3px #808080;
+  }
+  #subhead {
+    font-family: helvetica;
+    align-items: left;
+    font-size: 30px;
+    letter-spacing: .5px;
+    line-height: 10px;
+  }
+  #byline {
+    font-family: helvetica;
+    font-size: 20px;
+  }
+  #doc {
+    width: 90%;
     display: block;
-    width: 80%;
+    margin: 0 auto;
+  }
+  #docImg {
+    max-height: 100vh;
+    margin: 0 auto;
+    width: auto;
+  }
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-size: 30px;
+    padding-left: 440px;
+  }
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+  }
+  .iframe {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  body {
+    font-family: helvetica;
+    font-size: 20px;
+  }
+  h2 {
+    font-family: helvetica;
+    font-size: 40px;
+    border-left: 10px solid black;
+    /* padding-left: .5em; */
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
+  figcaption {
+    font-size: 15px;
   }
 }
 
