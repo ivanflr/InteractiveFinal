@@ -33,7 +33,7 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  box-shadow: 5px 5px 5px #888888;
+  box-shadow: 2px 2px 2px #888888;
   margin-bottom: 40px;
   /* height: 100vh; */
 }
@@ -49,24 +49,28 @@ html, body {
 }
 
 #headline {
-  font-size: 50px;
+  font-size: 40px;
   color: #ffff66;
+  align-items: left;
 }
 
 #subhead {
   align-items: left;
   font-size: 20px;
-  padding-top: 5px;
-  letter-spacing: .5px;
-  line-height: 25px;
+  letter-spacing: .7px;
+  line-height: 20px;
 }
 
-#byline {}
+#byline {
+  font-size: .5em;
+}
 
 h1 {
   text-align: center;
-  font-weight: 8800;
-  font-size: 40px;
+}
+
+h2 {
+  padding-left: 2%;
 }
 
 /* Start your base/mobile styles here */
@@ -163,6 +167,10 @@ figcaption {
 
 @media(min-width: 729px) {
   /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
+  img {
+    display: block;
+    width: 80%;
+  }
 }
 
 }
